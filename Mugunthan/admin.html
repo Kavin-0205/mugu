@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">MyGallery - Admin</div>
+    <ul class="nav-links">
+      <li><a href="index.html">User View</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </nav>
+
+  <main class="admin-main">
+    <!-- Add Card -->
+    <section class="admin-section">
+      <h2>Add Card (Image + Title)</h2>
+      <form id="add-card-form" class="form" enctype="multipart/form-data">
+        <label>Image<input id="card-image-input" type="file" accept="image/*" required></label>
+        <label>Title<input id="card-title-input" type="text" placeholder="Title" required></label>
+        <button type="submit" class="btn">Add Card</button>
+      </form>
+    </section>
+
+    <!-- Manage Cards -->
+    <section class="admin-section">
+      <h2>Manage Cards</h2>
+      <div id="admin-list" class="admin-list"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
